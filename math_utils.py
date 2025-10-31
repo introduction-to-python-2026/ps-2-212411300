@@ -11,8 +11,7 @@ def find_mean(num1, num2, num3):
         return(mean)
 
 def find_mean_std(num1, num2, num3):
-    mean = ((num1+num2+num3)/3):
-    sum = (num1+num2+num3):
-    mean_std =sum((x - mean) ** 2 for x in data) / (3*(data) - 1):
-  return(mean_std)
+    mean = ((num1+num2+num3)/3)
+    mean_std = ((num1-mean)**2+(num2-mean)**2+(num3-mean)**2/3)**0.5
+    return(mean_std)
 
